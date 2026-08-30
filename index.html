@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>ML-TECNOLOGIA | Manutenção de Celulares, Computadores e Redes</title>
+    <meta name="description" content="ML-TECNOLOGIA - Manutenção de celulares, computadores, configuração de redes e desenvolvimento web. Orçamento grátis!">
+    <meta name="keywords" content="manutenção celular, reparação computador, redes, desenvolvimento web, tecnologia">
+    <meta name="author" content="ML-TECNOLOGIA">
+
+    <!-- Open Graph (partilha no WhatsApp/Facebook) -->
+    <meta property="og:title" content="ML-TECNOLOGIA | Pedido de Serviços">
+    <meta property="og:description" content="Faça o seu pedido de serviços tecnológicos. Orçamento grátis!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/eu (1).png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/eu (1).png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffd208">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ML-TEC">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <div class="logo">
+            <h1>ML-TECNOLOGIA</h1>
+            <p>Pedido de Serviços</p>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+
+        <nav id="navMenu">
+            <a href="#">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#videos">Vídeos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-texto">
+
+                <span>🚀 SERVIÇOS TECNOLÓGICOS</span>
+
+                <h2>
+                    FAÇA O SEU PEDIDO DE SERVIÇOS
+                    NA <strong>ML-TECNOLOGIA</strong>
+                </h2>
+
+                <p>
+                    Escolha o serviço que precisa, envie o seu pedido
+                    e acompanhe o estado do atendimento.
+                </p>
+
+                <a href="#servicos" class="btn">
+                    FAZER PEDIDO
+                </a>
+
+            </div>
+
+            <div class="hero-imagem">
+                <img src="img/eu (1).png" alt="ML-TECNOLOGIA">
+            </div>
+
+        </section>
+
+
+        <!-- NÚMEROS / ESTATÍSTICAS -->
+        <section class="numeros">
+            <div class="numeros-container">
+                <div class="numero-item">
+                    <div class="numero-valor">100+</div>
+                    <div class="numero-label">Clientes Atendidos</div>
+                </div>
+                <div class="numero-item">
+                    <div class="numero-valor">1</div>
+                    <div class="numero-label">Anos de Experiência</div>
+                </div>
+                <div class="numero-item">
+                    <div class="numero-valor">150</div>
+                    <div class="numero-label">Aparelhos Reparados</div>
+                </div>
+                <div class="numero-item">
+                    <div class="numero-valor">90%</div>
+                    <div class="numero-label">Satisfação</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona" class="como-funciona">
+            <h2>🔧 COMO FUNCIONA</h2>
+            <p class="subtitulo">Simples, rápido e sem complicações</p>
+
+            <div class="passos-container">
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <h3>Escolhe o Serviço</h3>
+                    <p>Seleciona o serviço que precisas na nossa lista.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <h3>Envia o Pedido</h3>
+                    <p>Preenche o formulário ou fala connosco no WhatsApp.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <h3>Recebe o Orçamento</h3>
+                    <p>Enviamos o orçamento em até 24 horas, grátis.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">4</div>
+                    <h3>Pagamento e Entrega</h3>
+                    <p>Após aprovação, executamos o serviço com garantia.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="servicos">
+
+            <h2>🛠️ ESCOLHA UM SERVIÇO</h2>
+
+            <div class="servicos-container">
+
+                <div class="card">
+                    <div class="icone">📱</div>
+                    <h3>Serviços para Celular</h3>
+                    <p>
+                        Manutenção, configuração e suporte
+                        para dispositivos móveis.
+                    </p>
+                    <button onclick="abrirPedido('Serviço para Celular')">
+                        FAZER PEDIDO
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="icone">💻</div>
+                    <h3>Serviços para Computador</h3>
+                    <p>
+                        Formatação, instalação e manutenção
+                        de computadores.
+                    </p>
+                    <button onclick="abrirPedido('Serviço para Computador')">
+                        FAZER PEDIDO
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="icone">🌐</div>
+                    <h3>Redes</h3>
+                    <p>
+                        Configuração de redes, routers,
+                        switches e equipamentos.
+                    </p>
+                    <button onclick="abrirPedido('Configuração de Redes')">
+                        FAZER PEDIDO
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="icone">🌍</div>
+                    <h3>Serviços Web</h3>
+                    <p>
+                        Criação de sites, sistemas e
+                        aplicações web.
+                    </p>
+                    <button onclick="abrirPedido('Serviço Web')">
+                        FAZER PEDIDO
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VÍDEOS -->
+        <section id="videos" class="videos">
+
+            <h2>🎥 CONHEÇA OS NOSSOS SERVIÇOS</h2>
+
+            <div class="videos-container">
+
+                <div class="video-card">
+                    <div class="video-icone">📱</div>
+                    <h3>Reparação OPPO</h3>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="video/oppo.mp4" type="video/mp4">
+                            O seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-icone">📲</div>
+                    <h3>Reparação iPhone 11</h3>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="video/iphone11.mp4" type="video/mp4">
+                            O seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-icone">💻</div>
+                    <h3>Aprede duas vezes mais</h3>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="video/desenvolva.mp4" type="video/mp4">
+                            O seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section id="sobre" class="sobre">
+
+            <h2>Sobre a ML-TECNOLOGIA</h2>
+
+            <div class="sobre-conteudo">
+                <div class="sobre-imagem">
+                    <img src="img/eu (2).png" alt="ML-TECNOLOGIA">
+                </div>
+                <div class="sobre-texto">
+                    <h3>Quem somos</h3>
+                    <p>
+                        A <strong>ML-TECNOLOGIA</strong> nasceu da paixão por resolver problemas tecnológicos
+                        de forma rápida, honesta e profissional. Com 1 anos de experiência no mercado,
+                        já ajudámos centenas de clientes a recuperar os seus equipamentos e a transformar
+                        as suas ideias em soluções digitais.
+                    </p>
+                    <p>
+                        Trabalhamos com <strong>transparência total</strong>: antes de iniciar qualquer serviço,
+                        apresentamos um orçamento claro, sem surpresas. A nossa missão é fortalecer a base
+                        tecnológica de cada cliente, oferecendo qualidade e confiança.
+                    </p>
+                    <div class="sobre-valores">
+                        <div class="valor">✅ Garantia em todos os serviços</div>
+                        <div class="valor">✅ Orçamento grátis e sem compromisso</div>
+                        <div class="valor">✅ Atendimento rápido e personalizado</div>
+                        <div class="valor">✅ Preços justos e transparentes</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- DEPOIMENTOS -->
+        <section id="depoimentos" class="depoimentos">
+            <h2>⭐ O QUE DIZEM OS NOSSOS CLIENTES</h2>
+            <p class="subtitulo">A confiança de quem já foi atendido</p>
+
+            <div class="depoimentos-container">
+
+                <div class="depoimento-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"O ML formatou o meu computador e ficou rápido como novo. Atendimento excelente e preço justo!"</p>
+                    <div class="cliente">
+                        <strong>António Luciano</strong>
+                        <span>Cliente desde 2025</span>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"Reparou o meu celular num dia só. Super recomendo, profissional de confiança!"</p>
+                    <div class="cliente">
+                        <strong>Alice Luís</strong>
+                        <span>Cliente desde 2026</span>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"Criou o site da minha empresa em tempo recorde. Ficou moderno e profissional. Obrigado!"</p>
+                    <div class="cliente">
+                        <strong>José Francisco</strong>
+                        <span>Cliente desde 2025</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <h2>❓ PERGUNTAS FREQUENTES</h2>
+            <p class="subtitulo">Tire as suas dúvidas</p>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Quanto tempo demora uma reparação?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>A maioria das reparações é feita em 24 a 48 horas. Casos mais complexos podem levar até 5 dias úteis. Informamos sempre o prazo antes de iniciar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Dão garantia nos serviços?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! Todos os nossos serviços têm garantia. O prazo varia conforme o tipo de serviço (de 30 a 90 dias).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Fazem atendimento ao domicílio?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim, fazemos atendimento ao domicílio para serviços de redes, configuração de computadores e consultoria. Entre em contacto para mais informações.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Quais formas de pagamento aceites?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Aceitamos dinheiro, transferência bancária, Multicaixa Express e pagamento por referência. Combinamos a melhor forma consigo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        O orçamento é realmente grátis?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim, 100% grátis e sem compromisso. Analisamos o seu caso e enviamos o orçamento antes de iniciar qualquer serviço.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FORMULÁRIO DE PEDIDO -->
+        <section id="pedido" class="pedido">
+            <h2>📝 FAÇA O SEU PEDIDO</h2>
+            <p class="subtitulo">Preencha os dados e enviaremos o orçamento</p>
+
+            <form class="form-pedido" id="formPedido">
+
+                <div class="form-grupo">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="telefone">Telefone / WhatsApp *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="+244 9XX XXX XXX">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Email (opcional)</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="servico">Serviço pretendido *</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="Serviço para Celular">📱 Serviço para Celular</option>
+                        <option value="Serviço para Computador">💻 Serviço para Computador</option>
+                        <option value="Configuração de Redes">🌐 Configuração de Redes</option>
+                        <option value="Serviço Web">🌍 Serviço Web</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensagem">Descreva o seu problema ou pedido *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Ex: O meu celular não liga..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">
+                    📲 ENVIAR PEDIDO PELO WHATSAPP
+                </button>
+
+            </form>
+        </section>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer id="contacto">
+
+        <div class="footer-conteudo">
+
+            <div class="footer-col">
+                <h3>ML-TECNOLOGIA</h3>
+                <p>Fortaleça a Base 🚀</p>
+                <p class="footer-slogan">Soluções tecnológicas com qualidade e confiança.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <!-- ⚠️ PREENCHA AQUI os seus dados reais -->
+                <p>📞 <a href="tel:+244972338343">+244 972 338 343</a></p>
+                <p>📧 <a href="mailto:contato@mltecnologia.com">contato@mltecnologia.com</a></p>
+                <p>📍 Luanda, Angola</p>
+                <p>🕐 Seg-Sex: 8h-18h | Sáb: 8h-13h</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <p><a href="#servicos">Serviços</a></p>
+                <p><a href="#sobre">Sobre</a></p>
+                <p><a href="#faq">FAQ</a></p>
+                <p><a href="#pedido">Fazer Pedido</a></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <!-- ⚠️ PREENCHA AQUI os seus links reais -->
+                <p><a href="https://wa.me/972338343" target="_blank">📱 WhatsApp</a></p>
+                <p><a href="https://instagram.com/mltecnologia" target="_blank">📷 Instagram</a></p>
+                <p><a href="https://facebook.com/mltecnologia" target="_blank">👍 Facebook</a></p>
+                <p><a href="https://tiktok.com/@mltecnologia" target="_blank">🎵 TikTok</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ML-TECNOLOGIA — Todos os direitos reservados</p>
+        </div>
+
+    </footer>
+
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <!-- ⚠️ PREENCHA AQUI: troque 244900000000 pelo seu número com código do país -->
+    <a href="https://wa.me/244900000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ML-TECNOLOGIA."
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Falar no WhatsApp">
+        💬
+    </a>
+
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="voltar-topo" id="voltarTopo" aria-label="Voltar ao topo">↑</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
